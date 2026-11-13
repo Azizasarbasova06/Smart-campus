@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Campus</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 20px auto; padding: 0 12px; }
+    label, select, input, button { display: block; margin: 8px 0; width: 100%; box-sizing: border-box; padding: 8px; }
+    .eq label { display: inline; width: auto; }
+    .eq input { display: inline; width: auto; }
+    #result.ok { color: green; } #result.bad { color: crimson; }
+    @media (max-width: 600px) { body { margin: 8px; } }
+  </style>
+</head>
+<body>
+  <h2>Room availability checker</h2>
+  <label>Attendees <input id="attendees" type="number" min="0" value="1"></label>
+  <div class="eq">
+    <label><input type="checkbox" value="projector"> projector</label>
+    <label><input type="checkbox" value="pc"> pc</label>
+    <label><input type="checkbox" value="whiteboard"> whiteboard</label>
+    <label><input type="checkbox" value="microphone"> microphone</label>
+  </div>
+  <label>Room <select id="room"></select></label>
+  <label>Start <input id="start" value="10:00"></label>
+  <label>End <input id="end" value="11:00"></label>
+  <button id="check">Check</button>
+  <p id="empty"></p>
+  <p id="result"></p>
+  <script type="module" src="src/ui.js"></script>
+</body>
+</html>
