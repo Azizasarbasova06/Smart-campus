@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><body>
+<h2>Room checker (initial)</h2>
+Start (HH:MM): <input id="s" value="10:00">
+End (HH:MM): <input id="e" value="11:00">
+<button onclick="check()">Check</button>
+<p id="out"></p>
+<script>
+const room = { blocked: false, bookings: [["09:00","10:00"]] };
+function toMin(t){ const [h,m]=t.split(":"); return h*60+ +m; }
+function check(){
+  const s = toMin(document.getElementById("s").value);
+  const e = toMin(document.getElementById("e").value);
+  const out = document.getElementById("out");
+  if (isNaN(s) || isNaN(e) || e <= s) { out.textContent="Invalid time"; return; }
+  if (e - s > 120) { out.textContent="Max 120 minutes"; return; }
+  if (room.blocked) { out.textContent="Room blocked"; return; }
+  for (const b of room.bookings) {
+    if (s < toMin(b[1]) && e > toMin(b[0])) { out.textContent="Overlaps"; return; }
+  }
+  out.textContent="Available";
+}
+</script>
+</body></html>
