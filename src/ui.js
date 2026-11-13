@@ -29,6 +29,6 @@ function showResult() {
 
 $("attendees").addEventListener("input", refreshRooms);
 document.querySelectorAll(".eq input").forEach(i => i.addEventListener("change", refreshRooms));
-$("room").addEventListener("change", showResult);   // F5
+$("room").addEventListener("change", showResult);   
 $("check").addEventListener("click", showResult);
 refreshRooms();

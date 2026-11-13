@@ -1,0 +1,3 @@
+| Prompt summary | Output used | Problems found | Changes made | Verification |
+| Asked for a step-by-step plan and code for room catalog and filtering | Module split: rooms, availability, filters, ui | New code ended up in initial/index.html by mistake | Restored initial/index.html with git, created root index.html | git status, opened both pages |
+| Asked for automated tests | 12 tests for AC1-AC5 and F1-F5 | Missing explicit AC5 and F3 tests | Added tests/regression.test.js | npm test: 14/14 pass |

@@ -2,23 +2,25 @@
 > test
 > node --test
 
-[32mтЬФ AC1 valid time is accepted [90m(1.566ms)[39m[39m
-[32mтЬФ AC1 end before start is rejected [90m(0.3369ms)[39m[39m
-[32mтЬФ AC2 exactly 120 minutes is allowed [90m(0.3068ms)[39m[39m
-[32mтЬФ AC2 121 minutes is rejected [90m(0.2858ms)[39m[39m
-[32mтЬФ AC3 blocked room is not available [90m(0.3797ms)[39m[39m
-[32mтЬФ AC4 overlapping booking is rejected [90m(0.315ms)[39m[39m
-[32mтЬФ AC4 touching interval is allowed [90m(0.296ms)[39m[39m
-[32mтЬФ F1 exact capacity passes [90m(1.8591ms)[39m[39m
-[32mтЬФ F1 insufficient capacity fails [90m(0.3964ms)[39m[39m
-[32mтЬФ F2 requires ALL equipment [90m(1.489ms)[39m[39m
-[32mтЬФ F4 no match gives empty list [90m(0.3725ms)[39m[39m
-[32mтЬФ F5 availability uses the chosen room's own bookings [90m(0.8853ms)[39m[39m
-[34mтД╣ tests 12[39m
+[32mтЬФ AC1 valid time is accepted [90m(1.9902ms)[39m[39m
+[32mтЬФ AC1 end before start is rejected [90m(0.2919ms)[39m[39m
+[32mтЬФ AC2 exactly 120 minutes is allowed [90m(0.2421ms)[39m[39m
+[32mтЬФ AC2 121 minutes is rejected [90m(0.1745ms)[39m[39m
+[32mтЬФ AC3 blocked room is not available [90m(0.661ms)[39m[39m
+[32mтЬФ AC4 overlapping booking is rejected [90m(0.2611ms)[39m[39m
+[32mтЬФ AC4 touching interval is allowed [90m(0.2185ms)[39m[39m
+[32mтЬФ F1 exact capacity passes [90m(1.9712ms)[39m[39m
+[32mтЬФ F1 insufficient capacity fails [90m(0.6547ms)[39m[39m
+[32mтЬФ F2 requires ALL equipment [90m(3.9931ms)[39m[39m
+[32mтЬФ F4 no match gives empty list [90m(0.3029ms)[39m[39m
+[32mтЬФ F5 availability uses the chosen room's own bookings [90m(1.1762ms)[39m[39m
+[32mтЬФ AC5 checking availability does not change booking data [90m(1.5232ms)[39m[39m
+[32mтЬФ F3 blocked room is never reported available [90m(0.3592ms)[39m[39m
+[34mтД╣ tests 14[39m
 [34mтД╣ suites 0[39m
-[34mтД╣ pass 12[39m
+[34mтД╣ pass 14[39m
 [34mтД╣ fail 0[39m
 [34mтД╣ cancelled 0[39m
 [34mтД╣ skipped 0[39m
 [34mтД╣ todo 0[39m
-[34mтД╣ duration_ms 258.0782[39m
+[34mтД╣ duration_ms 273.3952[39m

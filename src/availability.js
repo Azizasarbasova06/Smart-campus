@@ -7,10 +7,9 @@ export function validateTime(start, end) {
   if (!Number.isFinite(start) || !Number.isFinite(end)) return "Invalid time";
   if (end <= start) return "End must be after start";
   if (end - start > 120) return "Maximum 120 minutes";
-  return null; // ошибок нет
+  return null; 
 }
 
-// касание (конец = начало другой брони) НЕ считается пересечением
 export function overlaps(a, b) {
   return a.start < b.end && a.end > b.start;
 }

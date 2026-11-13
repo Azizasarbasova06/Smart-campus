@@ -1,0 +1,1 @@
+| Duplicated logic locations removed | 0 | 0 | I searched initial/index.html for repeated validation or conversion code and found none; the improvement was separation of responsibilities, not removal of duplicates |

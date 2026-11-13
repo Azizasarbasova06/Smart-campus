@@ -1,0 +1,2 @@
+The AI gave me the file layout, but my first attempt pasted the new interface code into initial/index.html instead of a new index.html in the project root, which overwrote the initial version. I noticed the file was marked "M" (modified) in
+Git, restored it with `git checkout -- initial/index.html`, and created a separate root index.html. I now keep the initial version untouched.
